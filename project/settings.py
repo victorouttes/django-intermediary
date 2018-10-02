@@ -55,7 +55,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,4 +129,10 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+LOGIN_URL = '/login/'
+
+LOGIN_REDIRECT_URL = 'client_list'
+
+LOGOUT_REDIRECT_URL = 'login'
 
