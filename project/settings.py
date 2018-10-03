@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'client',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,7 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = '/login/'
 
-LOGIN_REDIRECT_URL = 'client_list'
+LOGIN_REDIRECT_URL = 'home'
 
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'home'
 
