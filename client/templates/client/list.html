@@ -13,6 +13,7 @@
             <th>Salary</th>
             <th>Bio</th>
             <th>Photo</th>
+            <th>Document</th>
             <th></th>
         </thead>
         {% for client in clients %}
@@ -28,6 +29,7 @@
                         <img src="{{ client.photo.url }}" width="50px">
                     {% endif %}
                 </td>
+                 <td>{{client.doc.num_doc}}</td>
                 <td>
                     <a href="{% url 'client_update' client.id %}" class="btn btn-info"><i class="fas fa-pen"></i></a>
                     <a href="{% url 'client_delete' client.id %}" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
